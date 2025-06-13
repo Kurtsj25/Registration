@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="number" id="phone" required />
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" required /> Female</label>
+      </div>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required />
+
+      <label for="course">Course/Program:</label>
+      <select id="course" required>
+        <option value="">-- Select Course --</option>
+        <option value="BSIT-MWA">BSIT-MWA</option>
+        <option value="BSCS">BSCS</option>
+        <option value="BSBA">BSBA</option>
+        <option value="BSN">BSN</option>
+        <option value="BSA">BSA</option>
+        <option value="BSTM">BSTM</option>
+        <option value="BSPsych">BSPsych</option>
+      </select>
+
+      <label>
+        <input type="checkbox" id="terms" required />
+        I accept the Terms and Conditions
+      </label>
+
+      <button type="button" onclick="MyFunction()">Register</button>
+    </form>
+
+    
+
+  <script src="kurt.js"></script>
+</body>
+</html>
